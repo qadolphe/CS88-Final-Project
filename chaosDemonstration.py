@@ -12,8 +12,7 @@ m1, m2 = 1, 1
 g = 9.81
 
 # Maximum time, time point spacings and the time grid (all in s).
-numPend = 8
-tmax, dt = 40, 0.01
+tmax, dt = 20, 0.01
 t = np.arange(0, tmax+dt, dt)
 frames = len(t)
 
@@ -93,13 +92,8 @@ plt.axis('off')
 
 # Create pendulums
 pendulums = []
-for i in range(numPend):
-    # Initial conditions: theta1, dtheta1/dt, theta2, dtheta2/dt.
-    if i == 0:
-        pendulums.append(Pendulum(3*np.pi/7, 0, 3*np.pi/4, 0, ax))
-    else:
-        t1, dt1, t2, dt2 = pendulums[-1].getNextInitial()
-        pendulums.append(Pendulum(t1, dt1, t2, dt2, ax ))
+pendulums.append(Pendulum(3*np.pi/7, 0, 3*np.pi/4, 0, ax))
+pendulums.append(Pendulum(3*np.pi/7 + .001, 0, 3*np.pi/4, 0, ax))
 
 
 
@@ -131,18 +125,4 @@ for i in range(frames):
     nums.append(int(binary, 2))
 
 
-# print(pendulums[0].angle_with_axis[-1])
-# print(angleToBinary(pendulums[0].angle_with_axis[-1]))
-# Display the animation
-#plt.show()
-
-plt.figure()
-plt.hist(nums, bins=256, color='blue', edgecolor='black')
-
-# Add labels and title
-plt.xlabel('Number')
-plt.ylabel('Frequency')
-plt.title(f'Histogram of Numbers from 0 to 2^{numPend} (Trials: {frames})')
-
-# Display the histogram
-plt.show()
+ani.save('chaosDemo.mp4', writer='ffmpeg', dpi=800)

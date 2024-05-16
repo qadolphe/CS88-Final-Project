@@ -9,9 +9,12 @@ m1, m2 = 1, 1
 # The gravitational acceleration (m.s-2).
 g = 9.81
 
+
+
+
 # Maximum time, time point spacings and the time grid (all in s).
 numPend = 8
-tmax, dt = 5000, 0.01
+tmax, dt = 2.56, .01
 t = np.arange(0, tmax+dt, dt)
 frames = len(t)
 
@@ -84,14 +87,14 @@ for i in range(numPend):
     # Initial conditions: theta1, dtheta1/dt, theta2, dtheta2/dt.
     print(f"Pendulum ({i}/{numPend})")
     if i == 0:
-        pendulums.append(Pendulum(3*np.pi/7, 0, 3*np.pi/4, 0))
+        pendulums.append(Pendulum(3*np.pi/7+.3, 0, 3*np.pi/4, 0))
     else:
         t1, dt1, t2, dt2 = pendulums[-1].getNextInitial()
         pendulums.append(Pendulum(t1, dt1, t2, dt2 ))
 
 
 
-filename = f"{numPend}P-{tmax}Sec.csv"
+filename = f"{numPend}P-{tmax}Sec3.csv"
 nums = []
 
 with open(filename, 'w') as csvfile:

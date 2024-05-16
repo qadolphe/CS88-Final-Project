@@ -11,7 +11,7 @@ g = 9.81
 
 # Maximum time, time point spacings and the time grid (all in s).
 numPend = 8
-tmax, dt = 3000, 0.01
+tmax, dt = 5000, 0.01
 t = np.arange(0, tmax+dt, dt)
 frames = len(t)
 
@@ -111,4 +111,5 @@ plt.ylabel('Frequency')
 plt.title(f'Histogram of Numbers from 0 to 2^{numPend} (Trials: {frames})')
 
 # Display the histogram
+plt.savefig(f"{numPend}P-{tmax}Sec.png", bbox_inches='tight', pad_inches=.1)
 plt.show()

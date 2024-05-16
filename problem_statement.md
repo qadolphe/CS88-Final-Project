@@ -8,7 +8,7 @@ Authors: Nathan Lee and Quentin Adolphe
 
 ## Problem Statement ##
 
-Generating random numbers especially in the context of computers is extremely different. We want to explore a simulated technique of using chaotic systems to generate pseudorandom numbers from a computer.
+Generating random numbers especially in the context of computers is extremely difficult. We want to explore a simulated technique of using chaotic systems to generate pseudorandom numbers from a computer.
 
 ## Motivation and related work ##
 

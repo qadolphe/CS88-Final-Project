@@ -1,3 +1,6 @@
+###
+# Starter code: https://scipython.com/blog/the-double-pendulum/ 
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -121,6 +124,7 @@ for pendulum in pendulums:
 
 # Create animation
 ani = FuncAnimation(fig, update, frames=frames, interval=dt*1000, repeat=False)
+ani.save('8pendEx.mp4', writer='ffmpeg', dpi=900)
 
 nums = []
 for i in range(frames):
@@ -131,8 +135,6 @@ for i in range(frames):
     nums.append(int(binary, 2))
 
 
-# print(pendulums[0].angle_with_axis[-1])
-# print(angleToBinary(pendulums[0].angle_with_axis[-1]))
 # Display the animation
 #plt.show()
 
