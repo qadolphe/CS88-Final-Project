@@ -1,0 +1,31 @@
+https://www.cs.swarthmore.edu/~chaganti/cs88/s24/labs/project.html[CS88: Security Project]
+=====
+
+This is a group project, please sit with your group. 
+
+== Project Deliverables
+
+To complete the project choose one of the following options and submit your
+`Problem Statement` by **April 23rd 11.59PM**. 
+
+. Option 1: https://www.cs.swarthmore.edu/~chaganti/cs88/s24/labs/project.html#_projects_based_on_lab_extensions[Lab Based Extensions]
+
+. Option 2: https://www.cs.swarthmore.edu/~chaganti/cs88/s24/labs/project.html#_dataset_analysis_attack_detection_and_prevention_based_on_real_world_measurements[Dataset Analysis]
+
+. Option 3: https://www.cs.swarthmore.edu/~chaganti/cs88/s24/labs/project.html#_literature_review_projects[Literature Review]
+
+== Due Dates
+
+. Once your group has chosen a project:
+	* post your choice in a private thread on EdStem to Vasanta before April 23rd, 
+	* submit your `Problem Statement` by **April 23rd 11.59PM**. 
+        * submit a timeline for completion of your project, and division of 
+	  responsibilities in `project_timeline.md` by **April 23rd 11.59PM**.
+
+. Next, based on your choice of project, submit your working lab extension/data analysis/draft report (nearly complete)
+       by **May 8th, 11:59PM**. 
+
+. Finally, upload your presentation to Google Drive (you will receive a unique link soon) by **May 10th, 11:59PM**. 
+
+
+
