@@ -1,3 +1,5 @@
+Completed by Quentin Adolphe and Nathan Lee for our Swarthmore College CS88 final project.
+
 https://www.cs.swarthmore.edu/~chaganti/cs88/s24/labs/project.html[CS88: Security Project]
 =====
 
